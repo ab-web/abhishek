@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WEB</title>
+</head>
+<style>
+	html{
+		height: 100%;
+		width: 100%;
+	}
+	
+	
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	body{
+		background-image:url("2.jpg");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size: cover;
+		
+	}
+     .hover{
+		padding: 2%;
+		background-color: black;
+		text-align: right;
+		color: white;
+		height: 50px;
+
+
+	}
+	.ab{
+		cursor:pointer;
+		float: right;
+		padding: 1%;
+	}
+	#login{
+	
+		height: 200px;
+		width: 40%;
+       background-color:orange;
+		margin: auto;
+		margin-top:5%;
+		border-radius: 20px;
+		display: none;
+
+	}
+	#creat{
+		height: 300px;
+		width: 40%;
+       background-color:orange;
+		margin: auto;
+		margin-top:5%;
+		border-radius: 20px;
+		display: none;
+		
+	}
+	p{
+		text-align: center;
+
+	}
+    h1:hover{background: white; color: red; font-weight: 800; border-radius: 20px;}
+	#ac{
+		margin-top: 5%;
+		text-align: center;
+		height: 40px;
+		border-radius: 20%;
+	}
+	#as{
+		margin-top: 2%;
+		height: 30px;
+		width: 40px;
+		cursor: pointer;
+		border-radius: 20%;
+	}
+	.none{
+		height: 0px;
+		
+	}
+	.ad{
+		border: 0px solid black;
+		height: 300px;
+		width: 400px;
+		margin-left: 400px;
+		margin-top: 5%;
+		border-radius: 20%;
+		background-color:black; 
+		cursor: pointer;
+	}
+	.l{
+		font-size:40px; 
+		font-weight: 40px;
+		color: white;
+		font-family: cursive;
+	}
+	.c{
+		color: white;
+		text-align: center;
+		margin-top: 5%;
+	}
+	a:visited{color: white}
+	a:hover{color: red}
+	a{text-decoration: none}
+</style>
+<body>
+	<div class="back">
+	<div class="hover">
+		
+     <h1 class="ab" onClick="document.getElementById('login').style.display='block',document.getElementById('creat').style.display='none'">login</h1>
+     <h1 class="ab" onClick="document.getElementById('creat').style.display='block',document.getElementById('login').style.display='none'">Creat one</h1>
+
+ </div>
+ <p class="l">This is all about web development</p>
+  <div class="ad">
+
+ 	
+ 	<h1 class="c"><a href="ab.html">Check Over Images</a></h1>
+ 	<h1 class="c"><a href="theory.html">Check Over Theories</a></h1>
+ 	<h1 class="c"><a href="color.html">Color Game</a></h1>
+
+ 	
+ </div>
+ <div class="none">
+ <div id="login">
+ 	<form method="post">
+ 		<p><input type="email" placeholder="Enter your email" id="ac"></p>
+ 		<p><input type="password" placeholder="Enter your password" id="ac"></p>
+ 		<p><input type="submit" name="go" value="login" id="as"></p>
+ 		
+ 	</form>
+ </div>
+ <div id="creat">
+ 	<form method="get">
+ 		<p>Name :
+ 		<input type="text" placeholder="Enter your name" id="ac"></p>
+ 		<p>Email id :
+ 			<input type="email" placeholder="Enter your email" id="ac">
+ 		</p>
+ 		<p>Password :
+ 			<input type="password" placeholder="Enter your password" id="ac">
+ 		</p>
+ 		<p><input type="submit" name="go" value="login" id="as"></p>
+
+ 	</form>
+ </div>
+</div>
+</div>
+</body>
+</html>

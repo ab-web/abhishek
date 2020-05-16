@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+
+	}
+	.nav{
+		height:80px;
+		width: 100%;
+		background-color: black;
+		color: white; 
+	}
+	#ab{
+		text-align: center;
+		padding: 2%;
+
+		
+	}
+	.i{
+		margin-top: 5%;
+	}
+	ul{
+		text-align: center;
+		margin-top: 4%;
+	}
+	ul li{
+		margin-top: 5%;
+		display: inline;
+
+
+	}
+	.b{
+		border: 2px solid black;
+		height: 20px;
+		width: 40px;
+		padding: 1% 3%;
+		float: right;
+		background-color: black;
+		color: white;
+		cursor: pointer;
+	}
+	#h{
+		margin-top: 1%;
+
+	}
+	#h:hover{background-color:red; color:red; cursor: pointer; }
+</style>
+<body>
+<div class="over">
+	<div class="nav">
+		<h1 id="ab">This Is Over Images</h1>
+		
+	</div>
+	<div class="b">
+		<a href="index.html">Back</a>
+	</div>
+	<div class="i">
+		<center>
+		        <img id="img" src="4.jpg" width="400px" height="400px" alt="banner">
+	   </center>
+	</div>
+	<div class="button">
+		<ul>
+			<center>
+			<li onClick="document.getElementById('img').src='5.jpg'"><img id="h" src="5.jpg" width="50px" height="40px"  border="3px solid black"></li>
+			<li onClick="document.getElementById('img').src='6.jpg'"><img id="h" src="6.jpg" width="50px" height="40px" border="3px solid white"></li>
+			<li onClick="document.getElementById('img').src='2.jpg'"><img id="h" src="2.jpg" width="50px" height="40px" border="3px solid black"></li>
+			<li onClick="document.getElementById('img').src='3.jpg'"><img id="h" src="3.jpg" width="50px" height="40px" border="3px solid black"></li>
+			<li onClick="document.getElementById('img').src='1.jpg'"><img id="h" src="1.jpg" width="50px" height="40px" border="3px solid black"></li>
+		</center>
+		</ul>
+		
+	</div>
+	
+</div>
+</body>
+</html>
